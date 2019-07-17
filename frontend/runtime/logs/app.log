@@ -1,0 +1,2794 @@
+2019-07-15 13:39:32 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Class 'frontend\widgets\Metadata' not found in /var/www/html/yii2demo/frontend/views/layouts/main.php:22
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(77): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 13:39:32 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47804'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563197972.654
+    'REQUEST_TIME' => 1563197972
+]
+2019-07-15 13:39:33 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Class 'frontend\widgets\Metadata' not found in /var/www/html/yii2demo/frontend/views/layouts/main.php:22
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(77): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 13:39:33 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47806'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563197973.626
+    'REQUEST_TIME' => 1563197973
+]
+2019-07-15 13:39:34 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Class 'frontend\widgets\Metadata' not found in /var/www/html/yii2demo/frontend/views/layouts/main.php:22
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(77): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 13:39:34 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47808'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563197974.103
+    'REQUEST_TIME' => 1563197974
+]
+2019-07-15 13:39:34 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Class 'frontend\widgets\Metadata' not found in /var/www/html/yii2demo/frontend/views/layouts/main.php:22
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(77): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 13:39:34 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47810'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563197974.333
+    'REQUEST_TIME' => 1563197974
+]
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/owl.carousel.min.js". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('js/owl.carousel...', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'js/owl.carousel.min.js'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=js%2Fowl.carousel.min.js'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=js%2Fowl.carousel.min.js'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198001.178
+    'REQUEST_TIME' => 1563198001
+]
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "ccss/fonts.css". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('ccss/fonts.css', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'ccss/fonts.css'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47820'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ccss%2Ffonts.css'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=ccss%2Ffonts.css'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198001.182
+    'REQUEST_TIME' => 1563198001
+]
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/script.js". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('js/script.js', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'js/script.js'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=js%2Fscript.js'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=js%2Fscript.js'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198001.183
+    'REQUEST_TIME' => 1563198001
+]
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/owl.theme.default.min.css". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('css/owl.theme.d...', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'css/owl.theme.default.min.css'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47822'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=css%2Fowl.theme.default.min.css'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=css%2Fowl.theme.default.min.css'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198001.182
+    'REQUEST_TIME' => 1563198001
+]
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/owl.carousel.min.css". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('css/owl.carouse...', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'css/owl.carousel.min.css'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47824'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=css%2Fowl.carousel.min.css'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=css%2Fowl.carousel.min.css'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198001.18
+    'REQUEST_TIME' => 1563198001
+]
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/owl.carousel.min.js". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('js/owl.carousel...', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'js/owl.carousel.min.js'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47826'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=js%2Fowl.carousel.min.js'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=js%2Fowl.carousel.min.js'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198001.262
+    'REQUEST_TIME' => 1563198001
+]
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/favicon.png". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('images/favicon....', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:01 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'images/favicon.png'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=images%2Ffavicon.png'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=images%2Ffavicon.png'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198001.757
+    'REQUEST_TIME' => 1563198001
+]
+2019-07-15 13:40:10 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/owl.carousel.min.css". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('css/owl.carouse...', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:10 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'css/owl.carousel.min.css'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47840'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=css%2Fowl.carousel.min.css'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=css%2Fowl.carousel.min.css'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198010.284
+    'REQUEST_TIME' => 1563198010
+]
+2019-07-15 13:40:10 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "ccss/fonts.css". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('ccss/fonts.css', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:10 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'ccss/fonts.css'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47840'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ccss%2Ffonts.css'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=ccss%2Ffonts.css'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198010.29
+    'REQUEST_TIME' => 1563198010
+]
+2019-07-15 13:40:10 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/owl.theme.default.min.css". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('css/owl.theme.d...', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:10 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'css/owl.theme.default.min.css'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47838'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=css%2Fowl.theme.default.min.css'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=css%2Fowl.theme.default.min.css'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198010.292
+    'REQUEST_TIME' => 1563198010
+]
+2019-07-15 13:40:10 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/script.js". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('js/script.js', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:10 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'js/script.js'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47840'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=js%2Fscript.js'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=js%2Fscript.js'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198010.303
+    'REQUEST_TIME' => 1563198010
+]
+2019-07-15 13:40:10 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/owl.carousel.min.js". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('js/owl.carousel...', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:10 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'js/owl.carousel.min.js'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47840'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=js%2Fowl.carousel.min.js'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=js%2Fowl.carousel.min.js'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198010.314
+    'REQUEST_TIME' => 1563198010
+]
+2019-07-15 13:40:10 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/favicon.png". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('images/favicon....', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:40:10 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = [
+    'r' => 'images/favicon.png'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47840'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=images%2Ffavicon.png'
+    'REQUEST_URI' => '/yii2demo/frontend/web/index.php?r=images%2Ffavicon.png'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198010.657
+    'REQUEST_TIME' => 1563198010
+]
+2019-07-15 13:44:22 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "ccss/fonts.css". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('ccss/fonts.css', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:44:22 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47878'
+    'REDIRECT_URL' => '/yii2demo/frontend/web/ccss/fonts.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/frontend/web/ccss/fonts.css'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198262.3
+    'REQUEST_TIME' => 1563198262
+]
+2019-07-15 13:44:22 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "ccss/fonts.css". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('ccss/fonts.css', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:44:22 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47892'
+    'REDIRECT_URL' => '/yii2demo/frontend/web/ccss/fonts.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/frontend/web/ccss/fonts.css'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198262.799
+    'REQUEST_TIME' => 1563198262
+]
+2019-07-15 13:44:23 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "ccss/fonts.css". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('ccss/fonts.css', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:44:22 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47882'
+    'REDIRECT_URL' => '/yii2demo/frontend/web/ccss/fonts.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/frontend/web/ccss/fonts.css'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198262.999
+    'REQUEST_TIME' => 1563198262
+]
+2019-07-15 13:44:23 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "ccss/fonts.css". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('ccss/fonts.css', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:44:23 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47882'
+    'REDIRECT_URL' => '/yii2demo/frontend/web/ccss/fonts.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/frontend/web/ccss/fonts.css'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198263.685
+    'REQUEST_TIME' => 1563198263
+]
+2019-07-15 13:45:27 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "ccss/fonts.css". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('ccss/fonts.css', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:45:27 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47908'
+    'REDIRECT_URL' => '/yii2demo/frontend/web/ccss/fonts.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/frontend/web/ccss/fonts.css'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198327.421
+    'REQUEST_TIME' => 1563198327
+]
+2019-07-15 13:45:29 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "ccss/fonts.css". in /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('ccss/fonts.css', Array)
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:45:29 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '47924'
+    'REDIRECT_URL' => '/yii2demo/frontend/web/ccss/fonts.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/frontend/web/ccss/fonts.css'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563198329.842
+    'REQUEST_TIME' => 1563198329
+]
+2019-07-15 15:23:30 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:2
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:23:30 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37472'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204210.647
+    'REQUEST_TIME' => 1563204210
+]
+2019-07-15 15:23:47 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:18
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:23:47 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37478'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204227.929
+    'REQUEST_TIME' => 1563204227
+]
+2019-07-15 15:23:48 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:18
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:23:48 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37480'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204228.848
+    'REQUEST_TIME' => 1563204228
+]
+2019-07-15 15:23:49 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:18
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:23:49 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37482'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204229.129
+    'REQUEST_TIME' => 1563204229
+]
+2019-07-15 15:23:49 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:18
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:23:49 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37484'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204229.299
+    'REQUEST_TIME' => 1563204229
+]
+2019-07-15 15:23:49 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:18
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:23:49 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37486'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204229.464
+    'REQUEST_TIME' => 1563204229
+]
+2019-07-15 15:23:49 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:18
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:23:49 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37488'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204229.743
+    'REQUEST_TIME' => 1563204229
+]
+2019-07-15 15:23:50 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:18
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:23:50 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37490'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204230.181
+    'REQUEST_TIME' => 1563204230
+]
+2019-07-15 15:23:50 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:18
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:23:50 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37492'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204230.632
+    'REQUEST_TIME' => 1563204230
+]
+2019-07-15 15:24:17 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:41
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:24:17 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37504'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204257.291
+    'REQUEST_TIME' => 1563204257
+]
+2019-07-15 15:24:19 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:41
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:24:19 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37506'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204259.111
+    'REQUEST_TIME' => 1563204259
+]
+2019-07-15 15:24:35 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:41
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:24:35 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37514'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204275.602
+    'REQUEST_TIME' => 1563204275
+]
+2019-07-15 15:24:36 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:41
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:24:36 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37516'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204276.221
+    'REQUEST_TIME' => 1563204276
+]
+2019-07-15 15:24:37 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:41
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:24:37 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37518'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204277.292
+    'REQUEST_TIME' => 1563204277
+]
+2019-07-15 15:25:25 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][error][Error] Error: Call to undefined method Yii::app() in /var/www/html/yii2demo/frontend/views/layouts/main.php:41
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/y...', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/var/www/html/y...', Array, Object(frontend\controllers\SiteController))
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<!-- itinerary ...')
+#4 /var/www/html/yii2demo/frontend/controllers/SiteController.php(79): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2019-07-15 15:25:25 [127.0.0.1][-][opeh9tb8462ohkfbfucerjohq0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'opeh9tb8462ohkfbfucerjohq0'
+    '_csrf-frontend' => '14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK\";}'
+    'advanced-backend' => 'o3bo4tvoc0i0oe8i5ll54rl6t5'
+    '_csrf-backend' => '8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=opeh9tb8462ohkfbfucerjohq0; _csrf-frontend=14e90dcfb1e240eb8b88d05af69117d5fda70b88b20ab0757e11b3e9d59db16aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ntSPdUUxbT9BLoDrDEdCEYk6Hg_0VCDK%22%3B%7D; advanced-backend=o3bo4tvoc0i0oe8i5ll54rl6t5; _csrf-backend=8aa80e69a5510780e99251d5125ba0a2a4d5dd0c9b3f48c4d9ec29e0bf8cd2dfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Qaj7p8gpLRrxHGbg9SdMoi0kHmMTLafU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '37528'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563204325.642
+    'REQUEST_TIME' => 1563204325
+]
+2019-07-16 14:54:40 [127.0.0.1][-][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#5 {main}
+2019-07-16 14:54:39 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c028b1b3bd9560584dd56ebd6a8f6f5383b0d2d194923520f1cd36dc3f4507e2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BclBSKnwxxHOO8xtPJcfAsbO9xT0bZNY\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => '_csrf-frontend=c028b1b3bd9560584dd56ebd6a8f6f5383b0d2d194923520f1cd36dc3f4507e2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BclBSKnwxxHOO8xtPJcfAsbO9xT0bZNY%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '40690'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563288879.996
+    'REQUEST_TIME' => 1563288879
+]
+2019-07-16 14:54:52 [127.0.0.1][-][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#5 {main}
+2019-07-16 14:54:52 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    'option4' => [
+        0 => ''
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c028b1b3bd9560584dd56ebd6a8f6f5383b0d2d194923520f1cd36dc3f4507e2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BclBSKnwxxHOO8xtPJcfAsbO9xT0bZNY\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => '_csrf-frontend=c028b1b3bd9560584dd56ebd6a8f6f5383b0d2d194923520f1cd36dc3f4507e2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BclBSKnwxxHOO8xtPJcfAsbO9xT0bZNY%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '40700'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563288892.967
+    'REQUEST_TIME' => 1563288892
+]
+2019-07-16 14:55:04 [127.0.0.1][-][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#5 {main}
+2019-07-16 14:55:04 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c028b1b3bd9560584dd56ebd6a8f6f5383b0d2d194923520f1cd36dc3f4507e2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BclBSKnwxxHOO8xtPJcfAsbO9xT0bZNY\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'HTTP_COOKIE' => '_csrf-frontend=c028b1b3bd9560584dd56ebd6a8f6f5383b0d2d194923520f1cd36dc3f4507e2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BclBSKnwxxHOO8xtPJcfAsbO9xT0bZNY%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '40708'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563288904.105
+    'REQUEST_TIME' => 1563288904
+]
+2019-07-16 14:55:26 [127.0.0.1][-][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/yii2demo/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#3 /var/www/html/yii2demo/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/yii2demo/frontend/web/index.php(17): yii\base\Application->run()
+#5 {main}
+2019-07-16 14:55:26 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'c028b1b3bd9560584dd56ebd6a8f6f5383b0d2d194923520f1cd36dc3f4507e2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"BclBSKnwxxHOO8xtPJcfAsbO9xT0bZNY\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-CA,en-US;q=0.7,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/yii2demo/'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-frontend=c028b1b3bd9560584dd56ebd6a8f6f5383b0d2d194923520f1cd36dc3f4507e2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22BclBSKnwxxHOO8xtPJcfAsbO9xT0bZNY%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/yii2demo/frontend/web/index.php'
+    'REMOTE_PORT' => '40716'
+    'REDIRECT_URL' => '/yii2demo/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2demo/'
+    'SCRIPT_NAME' => '/yii2demo/frontend/web/index.php'
+    'PHP_SELF' => '/yii2demo/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563288926.826
+    'REQUEST_TIME' => 1563288926
+]
